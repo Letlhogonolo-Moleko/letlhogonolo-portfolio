@@ -3,94 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letlhogonolo Moleko | Business Analysis Portfolio</title>
+    <title>Letlhogonolo Moleko | IT Graduate</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+        .dark-mode {
+            background-color: #1a202c;
+            color: #f7fafc;
         }
-        header {
-            background: #0073e6;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #005bb5;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            background: #003f7f;
-            border-radius: 5px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #0073e6;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #0073e6;
-            color: white;
-            margin-top: 20px;
+        /* Add smooth transitions */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Letlhogonolo Moleko</h1>
-        <h3>Business Analyst | Process Improvement | Data Analytics</h3>
+<body class="font-sans transition-colors duration-300">
+    <!-- Header/Nav -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800 dark:text-white">LMoleko</h1>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-full focus:outline-none" title="Toggle dark mode">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Home</a>
+                    <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Skills</a>
+                    <a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Projects</a>
+                    <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Contact</a>
+                </nav>
+            </div>
+        </div>
     </header>
-    
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <div class="container" id="about">
-        <h2>About Me</h2>
-        <p>I am Letlhogonolo Moleko, a passionate and driven IT professional with a strong foundation in Business Analysis, Process Optimization, and Data Analytics. I hold a <b>Bachelor of Information Technology in Business Systems</b> from IIE Rosebank College, where I achieved <b>10 distinctions</b> for academic excellence.</p>
-        <p>My expertise includes <b>business process modeling (BPMN)</b>, <b>SQL and Power BI</b> for data-driven decision-making, and <b>workflow automation</b> to enhance efficiency. I have worked on projects that involve optimizing business processes, analyzing sales data, and streamlining IT systems.</p>
-        <p>My goal is to become a <b>powerhouse in the tech space</b>, leveraging innovative technologies to drive digital transformation and business growth. I am committed to continuous learning and problem-solving, with a vision to impact industries through data-driven insights, automation, and process optimization.</p>
-    </div>
-    
-    <div class="container" id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><aa href="https://github.com/your-github-username/business-process-optimization" target="_blank" rel="noopener">Business Process Optimization</a></li>
-            <li><aa href="https://github.com/your-github-username/sales-analysis-powerbi" target="_blank" rel="noopener">Sales Analysis with Power BI</a></li>
-            <li><aa href="https://github.com/your-github-username/requirements-documentation" target="_blank" rel="noopener">Business Requirements Documentation</a></li>
-        </ul>
-    </div>
-    
-    <div class="container" id="contact">
-        <h2>Contact</h2>
-        <p>Email: letlhogonolomoleko3@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></p>
-        <p>GitHub: <a href="https://github.com/your-github-username" target="_blank" rel="noopener">github.com/your-github-username</a></p>
-    </div>
-    
-    <footer>
-        <p>&copy; 2024 Letlhogonolo Moleko | Business Analysis Portfolio</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 px-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">Letlhogonolo Moleko</h1>
+                <h2 class="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 mb-6">IT Business Systems Graduate</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                    Passionate about client service, process optimization, and collaborative problem-solving. 
+                    Equipped with technical expertise in IT systems, administration, and data analysis.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Me</a>
+                    <a href="#projects" class="px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-xl">
+                    <!-- Replace with your image -->
+                    <img src="https://via.placeholder.com/400x400" alt="Profile" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-6 bg-white dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Skill 1 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Database Management</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-center">SQL, ERP Systems</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-cloud text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Cloud Computing</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-center">AWS, Azure</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-file-excel text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Data Analysis</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-center">Advanced Excel</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white">IT Support</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-center">Troubleshooting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">POS System Enhancement</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Redesigned workflows for a retail point-of-sale system, reducing manual errors by 20% and improving transaction efficiency.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Excel</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Process Optimization</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Data Analysis</span>
+                        </div>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">View Details →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">ERP System Implementation</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Collaborated on a mock ERP implementation project focusing on inventory management modules.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">ERP</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">SAP</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Business Systems</span>
+                        </div>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-white dark:bg-gray-800">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Get In Touch</h2>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"></textarea>
+                </div>
+                <div class="md:col-span-2 text-center">
+                    <button type="submit" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Send Message</button>
+                </div>
+            </form>
+            
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="mailto:letthogonolomoleko3@gmail.com" class="text-gray-600 dark:text-gray-300 hover:text-blue-500" title="Email Letlhogonolo Moleko">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="tel:+27682528251" class="text-gray-600 dark:text-gray-300 hover:text-blue-500" title="Call Letlhogonolo Moleko">
+                    <i class="fas fa-phone text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-blue-500" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-100 dark:bg-gray-900 text-center">
+        <p class="text-gray-600 dark:text-gray-300">
+            &copy; <span id="year"></span> Letlhogonolo Moleko. All rights reserved.
+        </p>
     </footer>
+
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or use system preference
+        const savedTheme = localStorage.getItem('theme') || 
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        html.classList.add(savedTheme + '-mode');
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark-mode');
+            const theme = html.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
