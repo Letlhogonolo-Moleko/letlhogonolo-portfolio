@@ -54,8 +54,7 @@
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-xl">
-                    <!-- Replace with your image -->
-                    <img src="PORTP.jpg" alt="Profile" class="w-full h-full object-cover">
+                    <img src="PORTP.jpg" alt="Profile" class="w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
         </div>
@@ -199,5 +198,20 @@
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+      
+        themeToggle.addEventListener('click', () => {
+          html.classList.toggle('dark');
+          localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+      
+        // Set theme on load
+        if (localStorage.getItem('theme') === 'dark') {
+          html.classList.add('dark');
+        }
+      </script>
+      
 </body>
 </html>
