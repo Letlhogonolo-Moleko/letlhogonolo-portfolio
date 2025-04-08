@@ -202,35 +202,18 @@
 
     <script>
         // Dark mode toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-        
-        const savedTheme = localStorage.getItem('theme') || 
-                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        html.classList.add(savedTheme + '-mode');
-        
-        themeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark-mode');
-            const theme = html.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('theme', theme);
-        });
-        
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    <script>
-    themeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-    });
+const themeToggle = document.getElementById('themeToggle');
 
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-    </script>
-    <script>
-        const toggle = document.getElementById('themeToggle');
-        toggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-        themeToggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-        });
+// Check for saved theme preference or use system preference
+if (localStorage.getItem('theme') === 'dark' || 
+    (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+}
+
+themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+// Set current year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
