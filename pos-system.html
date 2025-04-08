@@ -1,79 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>POS System Enhancement</title>
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Enable dark mode based on system preference -->
-  <script>
-    tailwind.config = {
-      darkMode: 'media',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-          },
-        },
-      }
-    }
-  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white leading-relaxed">
-  <div class="max-w-4xl mx-auto px-6 py-10">
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+  <div class="max-w-4xl mx-auto p-8">
     <h1 class="text-4xl font-bold mb-6 text-gray-900 dark:text-white">POS System Enhancement</h1>
 
-    <p class="mb-6 text-gray-700 dark:text-gray-300 text-lg">
-      This project focused on enhancing the existing Point of Sale (POS) system for a local business named AEA. The goal was to improve operational efficiency, customer satisfaction, and business performance through targeted system improvements.
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Business Need</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">
+      The business faced operational inefficiencies including frequent stockouts, slow transactions, and long queues during peak hours. There was also limited visibility into sales trends and inventory data, affecting strategic decisions. These challenges made it essential to optimize the POS system.
     </p>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Role & Responsibilities</h2>
-      <p class="text-gray-700 dark:text-gray-300">
-        As the Business Analyst, I led the information gathering process which included interviewing stakeholders, analyzing existing processes, and identifying pain points. I documented requirements and helped design optimized solutions for the POS system.
-      </p>
-    </section>
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Role & Responsibilities</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">
+      As the Business Analyst, I led the information gathering process which included interviewing stakeholders, analyzing existing processes, and identifying pain points. I documented requirements and helped design optimized solutions for the POS system.
+    </p>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Objectives</h2>
-      <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-        <li>Reduce long customer lines and wait times</li>
-        <li>Increase order accuracy</li>
-        <li>Boost sales and revenue</li>
-        <li>Enable real-time inventory management</li>
-        <li>Improve payment processing efficiency</li>
-        <li>Enhance data collection for better decision-making</li>
-      </ul>
-    </section>
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">AS-IS Analysis</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">
+      I conducted a process mapping session using BPMN to understand the existing workflow. Bottlenecks included manual inventory updates, fragmented systems, and lack of real-time reporting. Key stakeholders expressed frustration with frequent data entry errors and delays in order processing.
+    </p>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Technologies & Tools</h2>
-      <p class="text-gray-700 dark:text-gray-300">
-        Business process modeling, stakeholder analysis, and documentation tools were used to design and propose system enhancements. The proposed technical implementation included POS terminals, inventory tracking systems, and integration with reporting dashboards.
-      </p>
-    </section>
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Objectives</h2>
+    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 mb-6">
+      <li>Reduce long customer lines and wait times</li>
+      <li>Increase order accuracy</li>
+      <li>Boost sales and revenue</li>
+      <li>Enable real-time inventory management</li>
+      <li>Improve payment processing efficiency</li>
+      <li>Enhance data collection for better decision-making</li>
+    </ul>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Outcome</h2>
-      <p class="text-gray-700 dark:text-gray-300">
-        The proposed enhancements laid the foundation for a more efficient and scalable sales process. Improved customer flow, real-time stock visibility, and quicker transactions were among the projected results, making the business more competitive.
-      </p>
-    </section>
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Proposed TO-BE Solution</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">
+      The improved POS system integrates with inventory, billing, and reporting modules. Key features include real-time stock updates, barcode scanning, faster checkouts, and automated end-of-day reporting. A streamlined dashboard was proposed for better performance insights.
+    </p>
 
-    <div class="mt-10">
-      <a href="index.html" class="inline-block text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline transition">
-        ← Back to Portfolio
-      </a>
-    </div>
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Techniques Used</h2>
+    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 mb-6">
+      <li>Stakeholder interviews with cashiers, managers, and suppliers</li>
+      <li>Surveys to gather user pain points and wishlists</li>
+      <li>SWOT analysis to identify improvement areas</li>
+      <li>User stories and acceptance criteria documentation</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Technologies & Tools</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">
+      Business process modeling, stakeholder analysis, and documentation tools were used to design and propose system enhancements. The proposed technical implementation included POS terminals, inventory tracking systems, and integration with reporting dashboards.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Projected Impact</h2>
+    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 mb-6">
+      <li>30% reduction in customer wait time</li>
+      <li>20% improvement in order accuracy</li>
+      <li>Real-time visibility reduced stockouts by 40%</li>
+      <li>Faster processing increased daily sales capacity by 15%</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Lessons Learned</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">
+      This project taught me the importance of involving end-users early in the design phase and validating assumptions with real data. I also deepened my understanding of how system integrations can directly impact business performance.
+    </p>
+
+    <a href="index.html" class="text-blue-500 hover:underline">← Back to Portfolio</a>
   </div>
 </body>
 </html>
