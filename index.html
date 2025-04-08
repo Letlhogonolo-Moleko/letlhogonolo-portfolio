@@ -177,16 +177,16 @@
             </form>
 
             <div class="mt-10 flex justify-center space-x-6">
-                <a href="https://www.linkedin.com/in/letlhogonolo-moleko-ba6a46290/" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 text-2xl">
+                <a href="https://www.linkedin.com/in/letlhogonolo-moleko-ba6a46290/" target="_blank" rel="noopener noreferrer" title="Visit my LinkedIn profile" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 text-2xl">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:letlhogonolomoleko3@gmail.com" class="text-gray-600 dark:text-gray-300 hover:text-red-600 text-2xl">
+                <a href="mailto:letlhogonolomoleko3@gmail.com" title="Send me an email" class="text-gray-600 dark:text-gray-300 hover:text-red-600 text-2xl">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://wa.me/27682528251" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-green-500 text-2xl">
+                <a href="https://wa.me/27682528251" target="_blank" rel="noopener noreferrer" title="Chat with me on WhatsApp" class="text-gray-600 dark:text-gray-300 hover:text-green-500 text-2xl">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="https://github.com/Letlhogonolo-Moleko" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white text-2xl">
+                <a href="https://github.com/Letlhogonolo-Moleko" target="_blank" rel="noopener noreferrer" title="Visit my GitHub profile" class="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white text-2xl">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -218,23 +218,19 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-      
-        themeToggle.addEventListener('click', () => {
-          html.classList.toggle('dark');
-          localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
-        });
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    });
 
-        if (localStorage.getItem('theme') === 'dark') {
-          html.classList.add('dark');
-        }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
     </script>
     <script>
         const toggle = document.getElementById('themeToggle');
         toggle.addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
         });
-    </script>
-</body>
-</html>
